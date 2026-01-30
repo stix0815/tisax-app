@@ -1,0 +1,42 @@
+{
+  "atlas_workspace": {
+    "id": "1TOx2xmbhy9IpTMxDveLiGZ-581eZu6Pt",
+    "name": "Atlas Workspace",
+    "link": "https://drive.google.com/drive/folders/1TOx2xmbhy9IpTMxDveLiGZ-581eZu6Pt"
+  },
+  "rechnungen": {
+    "id": "1jxn2LuaL5dWRHVL0Zlgjby8JV49T281J",
+    "name": "Rechnungen",
+    "link": "https://drive.google.com/drive/folders/1jxn2LuaL5dWRHVL0Zlgjby8JV49T281J",
+    "subfolders": {
+      "2026": {
+        "id": "1OUuWqzvG3oB6obSAloTicc19bu8V5foz",
+        "link": "https://drive.google.com/drive/folders/1OUuWqzvG3oB6obSAloTicc19bu8V5foz"
+      },
+      "archiv": {
+        "id": "1Z2IsFFMoKly2kq_gWt6A-kpK2kb4EqlC",
+        "link": "https://drive.google.com/drive/folders/1Z2IsFFMoKly2kq_gWt6A-kpK2kb4EqlC"
+      }
+    }
+  },
+  "projekte": {
+    "id": "18SBQrPOgU7scv3RFLtFj8L3FqN1dpaGO",
+    "name": "Projekte",
+    "link": "https://drive.google.com/drive/folders/18SBQrPOgU7scv3RFLtFj8L3FqN1dpaGO"
+  },
+  "dokumente": {
+    "id": "1oIUHv-wOSDFNAl2wy0g5Smf5Nu0Mrwxe",
+    "name": "Dokumente",
+    "link": "https://drive.google.com/drive/folders/1oIUHv-wOSDFNAl2wy0g5Smf5Nu0Mrwxe"
+  },
+  "analysen": {
+    "id": "1PTX6Xhs20iAIYYcoeDX-7bXMvhfLnhcG",
+    "name": "Analysen",
+    "link": "https://drive.google.com/drive/folders/1PTX6Xhs20iAIYYcoeDX-7bXMvhfLnhcG"
+  },
+  "notizen": {
+    "id": "1xfXFItJz6dee1bigxoer524ga-jv_9r-",
+    "name": "Notizen",
+    "link": "https://drive.google.com/drive/folders/1xfXFItJz6dee1bigxoer524ga-jv_9r-"
+  }
+}

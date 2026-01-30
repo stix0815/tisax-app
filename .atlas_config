@@ -1,0 +1,13 @@
+# Atlas Configuration
+
+## Google Drive
+ATLAS_WORKSPACE_ID=1TOx2xmbhy9IpTMxDveLiGZ-581eZu6Pt
+GOOGLE_ACCOUNT=nweferling82@gmail.com
+
+## Workspace
+WORKSPACE_PATH=/Users/nwe/clawd
+
+## Notes
+- Atlas Workspace ist mein dedizierter Ordner in Google Drive
+- Alle zukünftigen Projekte werden dort hochgeladen
+- Ordner: https://drive.google.com/drive/folders/1TOx2xmbhy9IpTMxDveLiGZ-581eZu6Pt
