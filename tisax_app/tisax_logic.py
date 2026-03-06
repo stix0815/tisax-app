@@ -84,6 +84,50 @@ class TISAXAssessment:
         # AL1: Normal / Kein Schutzbedarf
         return "AL1"
     
+    def collect_required_labels(self) -> list:
+        """
+        Collect all required TISAX labels based on selections
+        Returns sorted list of unique labels
+        """
+        labels = set()
+        
+        # Information Security Labels
+        level = self.determine_protection_level()
+        if level == "AL3":
+            labels.add("strictly confidential")
+            labels.add("very high availability")
+        elif level == "AL2":
+            labels.add("confidential")
+            labels.add("high availability")
+        
+        # Data Protection Labels
+        if self.data["personenbezogene_daten"] == "Ja":
+            labels.add("confidential")
+            labels.add("Data")
+        
+        if self.data["besondere_kategorien"] == "Ja":
+            labels.add("strictly confidential")
+            labels.add("Special Data")
+        
+        # Prototype Protection Labels
+        if self.data["bauteile"] == "Ja":
+            labels.add("confidential")
+            labels.add("Proto Parts")
+        
+        if self.data["fahrzeuge"] == "Ja":
+            labels.add("confidential")
+            labels.add("Proto Vehicles")
+        
+        if self.data["erprobung"] == "Ja":
+            labels.add("confidential")
+            labels.add("Test Vehicles")
+        
+        if self.data["events"] == "Ja":
+            labels.add("confidential")
+            labels.add("Events + Shootings")
+        
+        return sorted(list(labels))
+    
     def get_protection_description(self, level: str) -> str:
         """Get protection level description"""
         if level == "AL3":
@@ -114,6 +158,7 @@ class TISAXAssessment:
             "tisax_required": None,
             "assessment_level": None,
             "result_text": "",
+            "required_labels": [],
             "data": self.data.copy()
         }
         
@@ -121,6 +166,7 @@ class TISAXAssessment:
         if not form_complete:
             result["tisax_required"] = None
             result["result_text"] = ""
+            result["required_labels"] = []
             return result
         
         # Determine protection level
@@ -133,6 +179,7 @@ class TISAXAssessment:
         
         if level in ["AL3", "AL2"]:
             result["tisax_required"] = True
+            result["required_labels"] = self.collect_required_labels()
             result["result_text"] = (
                 "Ein aktuelles, gültiges TISAX-Zertifikat im ENX-Portal, "
                 "mit einem Umfang, der die für dieses Projekt relevanten "
@@ -159,6 +206,7 @@ class TISAXAssessment:
             
             if any_datenschutz_ja or any_prototyp_ja:
                 result["tisax_required"] = True
+                result["required_labels"] = self.collect_required_labels()
                 result["result_text"] = (
                     "Ein aktuelles, gültiges TISAX-Zertifikat im ENX-Portal, "
                     "mit einem Umfang, der die für dieses Projekt relevanten "
@@ -176,6 +224,7 @@ class TISAXAssessment:
                 )
             else:
                 result["tisax_required"] = False
+                result["required_labels"] = []
                 result["result_text"] = "Kein TISAX-Zertifikat notwendig."
         
         return result

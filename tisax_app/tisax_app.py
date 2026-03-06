@@ -261,6 +261,16 @@ with tab5:
                 </div>
             </div>
             """, unsafe_allow_html=True)
+            
+            # Display required labels
+            if result["required_labels"]:
+                st.markdown("### 📌 Erforderliche TISAX Labels:")
+                labels_text = "<br>".join([f"• {label}" for label in result["required_labels"]])
+                st.markdown(f"""
+                <div class="info-box">
+                    {labels_text}
+                </div>
+                """, unsafe_allow_html=True)
         else:
             st.markdown(f"""
             <div class="result-box result-no">

@@ -119,6 +119,13 @@ class TISAXPDFExporter:
                     # Replace newlines with HTML breaks
                     result_text = result["result_text"].replace('\n', '<br/>')
                     story.append(Paragraph(result_text, self.styles['Normal']))
+                    
+                    # Add required labels
+                    if result.get("required_labels"):
+                        story.append(Spacer(1, 0.3*cm))
+                        story.append(Paragraph("<b>Erforderliche TISAX Labels:</b>", self.styles['Normal']))
+                        labels_text = "<br/>".join([f"• {label}" for label in result["required_labels"]])
+                        story.append(Paragraph(labels_text, self.styles['Normal']))
                 else:
                     story.append(Paragraph("❌ TISAX erforderlich: NEIN", self.styles['ResultNo']))
                     story.append(Paragraph(result["result_text"], self.styles['Normal']))
