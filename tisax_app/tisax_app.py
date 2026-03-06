@@ -92,13 +92,6 @@ with tab1:
     
     col1, col2 = st.columns(2)
     with col1:
-        unternehmensname = st.text_input(
-            "Unternehmensname",
-            value=st.session_state.assessment.data.get("unternehmensname", ""),
-            key="unternehmensname"
-        )
-        st.session_state.assessment.data["unternehmensname"] = unternehmensname
-        
         kontaktperson = st.text_input(
             "Kontaktperson *",
             value=st.session_state.assessment.data.get("kontaktperson", ""),
@@ -106,8 +99,7 @@ with tab1:
             key="kontaktperson"
         )
         st.session_state.assessment.data["kontaktperson"] = kontaktperson
-    
-    with col2:
+        
         abteilung = st.text_input(
             "Abteilung *",
             value=st.session_state.assessment.data.get("abteilung", ""),
@@ -115,6 +107,14 @@ with tab1:
             key="abteilung"
         )
         st.session_state.assessment.data["abteilung"] = abteilung
+    
+    with col2:
+        unternehmensname = st.text_input(
+            "Unternehmensname (falls bekannt)",
+            value=st.session_state.assessment.data.get("unternehmensname", ""),
+            key="unternehmensname"
+        )
+        st.session_state.assessment.data["unternehmensname"] = unternehmensname
         
         st.text_input(
             "Datum",
