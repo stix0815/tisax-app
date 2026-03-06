@@ -93,26 +93,29 @@ with tab1:
     col1, col2 = st.columns(2)
     with col1:
         unternehmensname = st.text_input(
-            "Unternehmensname",
+            "Unternehmensname *",
             value=st.session_state.assessment.data.get("unternehmensname", ""),
+            placeholder="Erforderlich",
             key="unternehmensname"
         )
         st.session_state.assessment.data["unternehmensname"] = unternehmensname
         
-        abteilung = st.text_input(
-            "Abteilung",
-            value=st.session_state.assessment.data.get("abteilung", ""),
-            key="abteilung"
-        )
-        st.session_state.assessment.data["abteilung"] = abteilung
-    
-    with col2:
         kontaktperson = st.text_input(
-            "Kontaktperson",
+            "Kontaktperson *",
             value=st.session_state.assessment.data.get("kontaktperson", ""),
+            placeholder="Erforderlich",
             key="kontaktperson"
         )
         st.session_state.assessment.data["kontaktperson"] = kontaktperson
+    
+    with col2:
+        abteilung = st.text_input(
+            "Abteilung *",
+            value=st.session_state.assessment.data.get("abteilung", ""),
+            placeholder="Erforderlich",
+            key="abteilung"
+        )
+        st.session_state.assessment.data["abteilung"] = abteilung
         
         st.text_input(
             "Datum",
@@ -236,11 +239,25 @@ with tab4:
 with tab5:
     st.subheader("Bewertungsergebnis")
     
+    # Check mandatory fields first
+    mandatory_fields_filled = (
+        st.session_state.assessment.data.get("unternehmensname", "").strip() != "" and
+        st.session_state.assessment.data.get("kontaktperson", "").strip() != "" and
+        st.session_state.assessment.data.get("abteilung", "").strip() != ""
+    )
+    
+    if not mandatory_fields_filled:
+        st.error(
+            "❌ **Pflichtfelder erforderlich:** Bitte füllen Sie Unternehmensname, Kontaktperson und Abteilung aus (markiert mit *)."
+        )
+    
     # Run assessment
     result = st.session_state.assessment.assess()
     
     # Check if form is complete
-    if not result["form_complete"]:
+    if not mandatory_fields_filled:
+        st.info("⏳ Warten auf Pflichtfelder...")
+    elif not result["form_complete"]:
         st.warning(
             "⚠️ **Bitte füllen Sie alle Felder in den Tabs 2, 3 und 4 aus** um die Bewertung zu erhalten."
         )
@@ -285,7 +302,7 @@ with tab5:
         st.markdown("---")
         col1, col2, col3 = st.columns([1, 1, 2])
         with col1:
-            if st.button("📥 Export als PDF", use_container_width=True):
+            if st.button("📥 Export als PDF", use_container_width=True, disabled=not mandatory_fields_filled):
                 exporter = TISAXPDFExporter()
                 pdf_data = exporter.generate_pdf(
                     st.session_state.assessment.data,
