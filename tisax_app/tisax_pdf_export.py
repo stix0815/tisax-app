@@ -22,6 +22,12 @@ class TISAXPDFExporter:
     
     def _setup_custom_styles(self):
         """Setup custom paragraph styles"""
+        # Remove existing styles to avoid conflicts
+        style_names = ['CustomTitle', 'SectionHeading', 'ResultYes', 'ResultNo']
+        for style_name in style_names:
+            if style_name in self.styles:
+                del self.styles[style_name]
+        
         self.styles.add(ParagraphStyle(
             name='CustomTitle',
             parent=self.styles['Heading1'],
@@ -40,14 +46,6 @@ class TISAXPDFExporter:
             spaceAfter=8,
             spaceBefore=8,
             fontName='Helvetica-Bold'
-        ))
-        
-        self.styles.add(ParagraphStyle(
-            name='Normal',
-            fontSize=10,
-            textColor=colors.HexColor('#333333'),
-            fontName='Helvetica',
-            alignment=TA_JUSTIFY
         ))
         
         self.styles.add(ParagraphStyle(
