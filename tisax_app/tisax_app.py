@@ -93,9 +93,8 @@ with tab1:
     col1, col2 = st.columns(2)
     with col1:
         unternehmensname = st.text_input(
-            "Unternehmensname *",
+            "Unternehmensname",
             value=st.session_state.assessment.data.get("unternehmensname", ""),
-            placeholder="Erforderlich",
             key="unternehmensname"
         )
         st.session_state.assessment.data["unternehmensname"] = unternehmensname
@@ -241,14 +240,13 @@ with tab5:
     
     # Check mandatory fields first
     mandatory_fields_filled = (
-        st.session_state.assessment.data.get("unternehmensname", "").strip() != "" and
         st.session_state.assessment.data.get("kontaktperson", "").strip() != "" and
         st.session_state.assessment.data.get("abteilung", "").strip() != ""
     )
     
     if not mandatory_fields_filled:
         st.error(
-            "❌ **Pflichtfelder erforderlich:** Bitte füllen Sie Unternehmensname, Kontaktperson und Abteilung aus (markiert mit *)."
+            "❌ **Pflichtfelder erforderlich:** Bitte füllen Sie Kontaktperson und Abteilung aus (markiert mit *)."
         )
     
     # Run assessment
