@@ -63,4 +63,38 @@ end tell
 
 ---
 
+---
+
+## 🤖 Model Selection Rule
+
+**Default:** Always use **Haiku** 🚀
+
+**Switch to Sonnet ONLY when:**
+- Architecture decisions
+- Production code review
+- Security analysis
+- Complex debugging/reasoning
+- Strategic multi-project decisions
+
+**When in doubt:** Try Haiku first.
+
+---
+
+## ⚡ Rate Limits & Budget
+
+**API Rate Limits:**
+- 5 seconds minimum between API calls
+- 10 seconds between web searches
+- Max 5 searches per batch, then 2-minute break
+- Batch similar work (1 request for 10 leads, not 10 separate requests)
+- **If 429 error:** STOP → wait 5 minutes → retry
+
+**Daily Budget:** $5
+- ⚠️ Warning at 75% ($3.75)
+
+**Monthly Budget:** $50
+- ⚠️ Warning at 75% ($37.50)
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.

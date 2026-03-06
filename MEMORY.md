@@ -22,9 +22,24 @@
 - Writer ✍️ - Content creation, marketing copy
 - *(weitere nach Bedarf)*
 
-**Status:** Konzept definiert, Umsetzung folgt bei Bedarf
+**Status:** ✅ **AKTIV** - Supervision aktiviert (2026-02-04)
 
-**User Request (2026-02-04):** "Ich möchte mit mehreren Rollen interagieren. Atlas als Supervisor, der andere überwacht und mir zusammenfassend berichtet."
+**User Requests:**
+- 2026-02-04: "Ich möchte mit mehreren Rollen interagieren. Atlas als Supervisor, der andere überwacht und mir zusammenfassend berichtet."
+- 2026-02-04: "Ja, ich möchte dass du andere Sessions/Agenten mit überwachst"
+
+**Aktive Supervision-Aufgaben:**
+- ✅ Überwache aktive Sessions via `sessions_list`
+- ✅ Lese History von Sub-Agents bei Bedarf via `sessions_history`
+- ✅ Kommuniziere mit Agents via `sessions_send`
+- ✅ Erstelle Zusammenfassungen und Reports
+- ✅ Informiere User proaktiv über wichtige Entwicklungen
+
+**Wann ich berichte:**
+- Bei expliziter Nachfrage ("Was macht Agent X?")
+- Bei Abschluss von delegierten Tasks
+- Bei Problemen/Blockern der Agents
+- Auf Wunsch: regelmäßige Status-Updates
 
 ---
 
@@ -54,11 +69,50 @@
   - ✅ Monte Carlo simulation (1000 iterations)
   - ✅ "Warum?"-Buttons mit ausführlichen Erklärungen (2026-02-01)
   - ✅ Probability-aware wording (kein "strongly bearish" bei nur 56%)
+  - ✅ Info-Icons bei Indikatoren (ℹ️ Tooltips)
   
 - **Features planned:**
-  - ⏳ Info-Icons bei Indikatoren (ℹ️ Tooltips)
   - ⏳ AI Explain (GPT-generierte Zusammenfassung)
   - ⏳ Learning Mode Toggle
+
+---
+
+## 🔄 Wiederkehrende Prozesse
+
+### 💰 Finanz-Tracking (Rechnungen)
+**Wann:** User schickt Rechnung/Invoice als Bild (oft OpenRouter, aber auch andere)
+
+**Workflow:**
+1. **Bild hochladen** → Drive-Ordner "Rechnungen"
+   - Link: https://drive.google.com/drive/folders/1OUuWqzvG3oB6obSAloTicc19bu8V5foz
+   - Naming: `Firma_YYYY-MM-DD_Betrag.jpg`
+   - Tool: `gog drive upload <file> --parent 1OUuWqzvG3oB6obSAloTicc19bu8V5foz --name "..."`
+
+2. **Daten eintragen** → Google Sheet "Finanz Übersicht"
+   - Link: https://docs.google.com/spreadsheets/d/12Fq1Tcfa3s1bjxkqSZyXhL9bf2QPL602kUDuDHXNicE/edit
+   - Tab: **"2026"** (aktuelles Jahr)
+   - Tool: `gog sheets append 12Fq1Tcfa3s1bjxkqSZyXhL9bf2QPL602kUDuDHXNicE "2026!A:H" --values-json '[...]'`
+
+**Spalten-Format:**
+- A: Datum (YYYY-MM-DD)
+- B: Firma
+- C: Kategorie (z.B. "Business", "Finanzen")
+- D: Betrag (€) - Format: "52,75" (Komma, nicht Punkt!)
+- E: MwSt (€) - meist "0"
+- F: Zahlart (z.B. "American Express", "Überweisung")
+- G: Status ("Bezahlt" / "Offen")
+- H: Steuerrelevant ("Ja" / "Nein")
+
+**Typische Firmen:**
+- OpenRouter, Inc → Business, American Express, Nein
+- AWS → Business
+- Strato → Business
+
+**Trigger-Keywords:**
+- "Rechnung eintragen"
+- "ins Finanz-Sheet"
+- "wie beim letzten Mal mit..."
+- Bild einer Invoice/Rechnung
 
 ---
 

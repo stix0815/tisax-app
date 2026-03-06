@@ -1,0 +1,1631 @@
+{
+  "source": [
+    {
+      "title": "MHP Cyber Rating & Monitoring in der Beschaffung",
+      "bullets": [],
+      "text_boxes": []
+    },
+    {
+      "title": "Cyber Rating",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "BitSight als Signalquelle für Third‑Party Cyber Risk etablieren und über MHP als Managed Service betreiben."
+        },
+        {
+          "level": 0,
+          "text": "Warum jetzt"
+        },
+        {
+          "level": 0,
+          "text": "Angriffsflächen & Lieferketten wachsen"
+        },
+        {
+          "level": 0,
+          "text": "Regulatorik und Board-Aufsicht nehmen zu"
+        },
+        {
+          "level": 0,
+          "text": "Punktuelle Assessments skalieren nicht"
+        },
+        {
+          "level": 0,
+          "text": "Was wir tun"
+        },
+        {
+          "level": 0,
+          "text": "Outside‑in Rating + Findings"
+        },
+        {
+          "level": 0,
+          "text": "Integration in Sourcing & Renewal"
+        },
+        {
+          "level": 0,
+          "text": "Kontinuierliches Monitoring + Mitigation"
+        },
+        {
+          "level": 0,
+          "text": "Was es bringt"
+        },
+        {
+          "level": 0,
+          "text": "Schnellere Vergabeentscheidungen"
+        },
+        {
+          "level": 0,
+          "text": "Messbare Risikoreduktion"
+        },
+        {
+          "level": 0,
+          "text": "Entlastung interner Teams"
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "EXECUTIVE SUMMARY",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "STANDARTISIEREN"
+        },
+        {
+          "level": 0,
+          "text": "SKALIEREN"
+        },
+        {
+          "level": 0,
+          "text": "WIRKUNG"
+        },
+        {
+          "level": 0,
+          "text": "BitSight wird als Standard-Outside-in-Signal für Third-Party Cyber Risk etabliert, MHP stellt als operativer TPRM-Managed Service den stabilen Betrieb sicher. Damit bekommt VW nicht „noch ein Tool“, sondern eine skalierbare Entscheidungs- und Steuerungsfähigkeit für Lieferantenrisiken – konsistent, auditfähig und anschlussfähig an den Beschaffungsprozess."
+        },
+        {
+          "level": 0,
+          "text": "Der Kern der Lösung folgt drei klaren Hebeln."
+        },
+        {
+          "level": 0,
+          "text": "Erstens Standardisieren: Wir definieren einheitliche Risikoschwellen, eine Supplier-Tier-Logik sowie klare Governance (Ownership, Eskalation, Evidence) und verankern das in den Procurement-Lifecycle (Sourcing, Onboarding, Renewal). Zweitens Skalieren: Statt punktueller Assessments setzen wir auf Continuous Monitoring mit Portfolio-Transparenz (Trends/Peer-Vergleich) und stellen über den Managed Service Kapazität „on demand“ bereit, damit das Modell auch bei großen Lieferantenlandschaften nicht am operativen Aufwand scheitert."
+        },
+        {
+          "level": 0,
+          "text": "Drittens liefern wir Wirkung, die für VW unmittelbar entscheidungsrelevant ist: schnellere, belastbare Stop/Go- und Renewal-Entscheidungen, Risikoreduktion durch strukturierten Outreach und Mitigation sowie messbare KPIs für Vorstand, Revision und Regulatorik."
+        },
+        {
+          "level": 0,
+          "text": "Kurz: Wir machen aus Cyber-Signalen ein belastbares Steuerungsinstrument für die Beschaffung – mit klarer Verantwortlichkeit, reproduzierbaren Entscheidungen und transparenter Wirkung über das gesamte Lieferantenportfolio hinweg."
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "WARUM DAS THEMA PRIORITÄT HAT",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Unsere Antwort BitSight als Datenbasis + MHP als Managed Service: standardisierte Ratings, Monitoring, Mitigation und Reporting – integriert in Beschaffungsentscheidungen."
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "Problem Statement",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Das aktuelle Third-Party Cyber Risk Management ist zu langsam und nicht skalierbar für große Lieferantenportfolios."
+        },
+        {
+          "level": 0,
+          "text": "Blind Spots"
+        },
+        {
+          "level": 0,
+          "text": "• Keine kontinuierliche „Outside-in“-Sicht"
+        },
+        {
+          "level": 0,
+          "text": "• Events werden spät erkannt"
+        },
+        {
+          "level": 0,
+          "text": "• Risikoaggregation fehlt"
+        },
+        {
+          "level": 0,
+          "text": "Operative Last"
+        },
+        {
+          "level": 0,
+          "text": "• Triage & Nachverfolgung manuell"
+        },
+        {
+          "level": 0,
+          "text": "• Lieferantenkommunikation ad hoc"
+        },
+        {
+          "level": 0,
+          "text": "• Evidenz/Reporting zeitintensiv"
+        },
+        {
+          "level": 0,
+          "text": "Entscheidungsdefizit"
+        },
+        {
+          "level": 0,
+          "text": "• Sourcing/Renewal ohne klare Schwellen"
+        },
+        {
+          "level": 0,
+          "text": "• Intransparente Exemptions"
+        },
+        {
+          "level": 0,
+          "text": "• Uneinheitliche Gremienentscheidungen"
+        },
+        {
+          "level": 0,
+          "text": "Einordnung: Gartner betont funktionsübergreifendes Lifecycle-TPRM inkl. Continuous Monitoring & Workflows."
+        },
+        {
+          "level": 0,
+          "text": "Punktuelle Fragebögen/Audits liefern keine kontinuierliche „Outside‑in“-Sicht und erkennen Drift zu spät."
+        },
+        {
+          "level": 0,
+          "text": "Ohne objektive Schwellenwerte entstehen uneinheitliche Stop/Go‑Entscheidungen und lange Ausnahmeschleifen."
+        },
+        {
+          "level": 0,
+          "text": "Operativer Aufwand (Triage, Lieferantenkommunikation, Tracking) bindet knappe Ressourcen in Beschaffung & InfoSec."
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "Key Insight #1: Der Markt fordert Lifecycle-TPRM – cross-functional",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "TPRM muss den gesamten Third-Party-Lifecycle abdecken und über mehrere Funktionen orchestriert werden (Procurement, InfoSec, Risk, Legal)."
+        },
+        {
+          "level": 0,
+          "text": "Orchestrierung"
+        },
+        {
+          "level": 0,
+          "text": "• Standard-Workflows (Onboarding → Betrieb → Offboarding)"
+        },
+        {
+          "level": 0,
+          "text": "• Klare Ownership & Eskalationswege"
+        },
+        {
+          "level": 0,
+          "text": "• Auditfähige Evidenz über Lifecycle"
+        },
+        {
+          "level": 0,
+          "text": "Technologielandschaft"
+        },
+        {
+          "level": 0,
+          "text": "• Oft mehrere TPRM-Technologien im Einsatz"
+        },
+        {
+          "level": 0,
+          "text": "• „Single Tool“ deckt selten alles ab"
+        },
+        {
+          "level": 0,
+          "text": "• Integration wird zum Erfolgsfaktor"
+        },
+        {
+          "level": 0,
+          "text": "Continuous Monitoring"
+        },
+        {
+          "level": 0,
+          "text": "• Kontinuierliche Signale statt Stichtags-Checks"
+        },
+        {
+          "level": 0,
+          "text": "• Triage/Priorisierung ist entscheidend"
+        },
+        {
+          "level": 0,
+          "text": "• Response-Prozesse müssen eingehängt sein"
+        },
+        {
+          "level": 0,
+          "text": "Quelle: Gartner Market Guide for Third-Party Risk Management Technology Solutions (5 May 2025)."
+        },
+        {
+          "level": 0,
+          "text": "Gartner: Organisationen nutzen häufig zwei oder mehr TPRM‑Technologien, weil kein Single Tool alle Domänen abdeckt."
+        },
+        {
+          "level": 0,
+          "text": "Best‑in‑class TPRM unterstützt Risk‑Tiering, Workflows, Eskalation und „Onboarding‑to‑Offboarding“‑Steuerung."
+        },
+        {
+          "level": 0,
+          "text": "Regulatoren und Boards erhöhen den Druck auf nachweisbare Third‑/Fourth‑Party‑Risikosteuerung."
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "Key Insight #2: BitSight skaliert TPRM mit Daten + Workflows",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "BitSight liefert messbaren Nutzen in Geschwindigkeit, Compliance-Aufwand und Risikoreduktion – als Outside-in Datenbasis für Portfolio-Steuerung."
+        },
+        {
+          "level": 0,
+          "text": "Skalierung"
+        },
+        {
+          "level": 0,
+          "text": "• 3.500+ Kunden; 50.000 Active Users"
+        },
+        {
+          "level": 0,
+          "text": "• Kontinuierliche Datenlage (Outside-in) für Dritte"
+        },
+        {
+          "level": 0,
+          "text": "• Portfolio-Sicht: Trends, Hotspots, Benchmarks"
+        },
+        {
+          "level": 0,
+          "text": "Effizienz"
+        },
+        {
+          "level": 0,
+          "text": "• 70% weniger Zeit fürs Vendor-Onboarding"
+        },
+        {
+          "level": 0,
+          "text": "• 40% weniger Zeit für Compliance-Reporting"
+        },
+        {
+          "level": 0,
+          "text": "• 297% ROI (Impact-Indikator)"
+        },
+        {
+          "level": 0,
+          "text": "Risikoreduktion"
+        },
+        {
+          "level": 0,
+          "text": "• 75% geringere Wahrscheinlichkeit eines Third-Party-Breaches"
+        },
+        {
+          "level": 0,
+          "text": "• Priorisierte Alerts statt „Noise“"
+        },
+        {
+          "level": 0,
+          "text": "• Schnellere Reaktion durch Ereignisfokus"
+        },
+        {
+          "level": 0,
+          "text": "Quelle: BitSight Company Overview 2025 (Business Impact Kennzahlen)."
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "Lösung: BitSight als „Outside-in“ Signalquelle im TPRM",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "BitSight liefert objektive, kontinuierliche Cyber-Risk-Intelligence für Dritte – operationalisiert über Workflows bis zur Lieferantenmaßnahme."
+        },
+        {
+          "level": 0,
+          "text": "1) Screening"
+        },
+        {
+          "level": 0,
+          "text": "• Vendor-Identifikation & Scope (kritische Lieferanten)"
+        },
+        {
+          "level": 0,
+          "text": "• Rating + Findings (Outside-in)"
+        },
+        {
+          "level": 0,
+          "text": "• Erste Triage & Priorisierung"
+        },
+        {
+          "level": 0,
+          "text": "2) Monitoring"
+        },
+        {
+          "level": 0,
+          "text": "• Alerts + Trend-Analysen (täglich)"
+        },
+        {
+          "level": 0,
+          "text": "• Ereignisfokus (Major Security Events)"
+        },
+        {
+          "level": 0,
+          "text": "• Hotspot- und Portfolio-Reporting"
+        },
+        {
+          "level": 0,
+          "text": "3) Mitigation"
+        },
+        {
+          "level": 0,
+          "text": "• Validierung, Supplier-Outreach"
+        },
+        {
+          "level": 0,
+          "text": "• Maßnahmenplan + Tracking"
+        },
+        {
+          "level": 0,
+          "text": "• Entscheidungshebel (SLA, Renewal, Eskalation)"
+        },
+        {
+          "level": 0,
+          "text": "Quelle: BitSight TPRM Datasheet – Assess/Monitor/Respond/Scale; MHP Operating Model (Porsche Referenz)."
+        },
+        {
+          "level": 0,
+          "text": "Assess & Onboard: vergleichbares Rating je Lieferant als frühe Entscheidungshilfe vor Vertragsabschluss."
+        },
+        {
+          "level": 0,
+          "text": "Continuous Monitoring: Alerts, Trend‑Analysen sowie Third‑/Fourth‑Party‑Risikokonzentration im Portfolio."
+        },
+        {
+          "level": 0,
+          "text": "Event Response: schnelle Identifikation und Outreach bei Major Security Events (z. B. Zero‑Days)."
+        },
+        {
+          "level": 0,
+          "text": "SCREENING"
+        },
+        {
+          "level": 0,
+          "text": "Rating + Findings"
+        },
+        {
+          "level": 0,
+          "text": "MONITORING"
+        },
+        {
+          "level": 0,
+          "text": "Alerts + Trends"
+        },
+        {
+          "level": 0,
+          "text": "MITIGATION"
+        },
+        {
+          "level": 0,
+          "text": "Outreach + Tracking"
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "Warum MHP: Von Tool zu steuerungsfähigem Betrieb",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "MHP übersetzt BitSight-Signale in konkrete Entscheidungen, Lieferantensteuerung und revisionssichere Nachweise – als integrierter Risikomanager-Service."
+        },
+        {
+          "level": 0,
+          "text": "Proof & Erfahrung"
+        },
+        {
+          "level": 0,
+          "text": "• Porsche: PoC 2024, produktiv seit 2025"
+        },
+        {
+          "level": 0,
+          "text": "• Skalierter Betrieb für >4.500 Partner"
+        },
+        {
+          "level": 0,
+          "text": "• Erprobte Schwellen, Workflows, Gremienlogik"
+        },
+        {
+          "level": 0,
+          "text": "Operational Excellence"
+        },
+        {
+          "level": 0,
+          "text": "• Validierung: False Positives reduzieren"
+        },
+        {
+          "level": 0,
+          "text": "• Triage & Priorisierung (Event/Trend)"
+        },
+        {
+          "level": 0,
+          "text": "• Outreach + Maßnahmenplan + Tracking"
+        },
+        {
+          "level": 0,
+          "text": "Governance & Enablement"
+        },
+        {
+          "level": 0,
+          "text": "• KPI/KRI, Board-Reporting, Evidence"
+        },
+        {
+          "level": 0,
+          "text": "• Templates (Supplier-Kommunikation, SLA)"
+        },
+        {
+          "level": 0,
+          "text": "• Change Enablement in Procurement & InfoSec"
+        },
+        {
+          "level": 0,
+          "text": "Quellen: MHP Angebot „Cyber Rating & Monitoring 2026“ (Porsche AG); BitSight TPRM Datasheet (Managed Services)."
+        },
+        {
+          "level": 0,
+          "text": "Setup & Enablement"
+        },
+        {
+          "level": 0,
+          "text": "Scope/Tiering"
+        },
+        {
+          "level": 0,
+          "text": "Schwellenwerte & Ausnahmeprozess"
+        },
+        {
+          "level": 0,
+          "text": "Templates & Tool‑Konfiguration"
+        },
+        {
+          "level": 0,
+          "text": "Operativer Betrieb"
+        },
+        {
+          "level": 0,
+          "text": "Triage & Validierung"
+        },
+        {
+          "level": 0,
+          "text": "Lieferanten‑Outreach"
+        },
+        {
+          "level": 0,
+          "text": "SLA‑Tracking & Eskalation"
+        },
+        {
+          "level": 0,
+          "text": "Governance"
+        },
+        {
+          "level": 0,
+          "text": "KPI/KRI Reporting"
+        },
+        {
+          "level": 0,
+          "text": "Risk Committees"
+        },
+        {
+          "level": 0,
+          "text": "Continuous Improvement"
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "Operating Model: klare Rollen – schnelle Entscheidungen",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Beschaffung steuert den Lifecycle, MHP betreibt als Risikomanager, InfoSec/GRC entscheidet über Risikoannahme und Kontrollwirksamkeit."
+        },
+        {
+          "level": 0,
+          "text": "Operating Model basiert auf Porsche-Referenzbetrieb und BitSight TPRM Best Practices."
+        },
+        {
+          "level": 0,
+          "text": "Beschaffung"
+        },
+        {
+          "level": 0,
+          "text": "Tiering & Vendor‑Scope"
+        },
+        {
+          "level": 0,
+          "text": "Vertragshebel (SLA, Klauseln)"
+        },
+        {
+          "level": 0,
+          "text": "Supplier Mgmt & Eskalationspfad"
+        },
+        {
+          "level": 0,
+          "text": "MHP Risikomanager (Service)"
+        },
+        {
+          "level": 0,
+          "text": "Monitoring, Triage, Validierung"
+        },
+        {
+          "level": 0,
+          "text": "Lieferantenkommunikation & Tracking"
+        },
+        {
+          "level": 0,
+          "text": "Reporting & Betriebssteuerung"
+        },
+        {
+          "level": 0,
+          "text": "InfoSec / GRC"
+        },
+        {
+          "level": 0,
+          "text": "Schwellenwerte & Policy"
+        },
+        {
+          "level": 0,
+          "text": "Risikoentscheidungen / Ausnahmen"
+        },
+        {
+          "level": 0,
+          "text": "Gremien & Auditfähigkeit"
+        },
+        {
+          "level": 0,
+          "text": "Trigger"
+        },
+        {
+          "level": 0,
+          "text": "Score < Schwelle / Event"
+        },
+        {
+          "level": 0,
+          "text": "Triage"
+        },
+        {
+          "level": 0,
+          "text": "Validierung + Priorität"
+        },
+        {
+          "level": 0,
+          "text": "Outreach"
+        },
+        {
+          "level": 0,
+          "text": "Lieferant + Maßnahmenplan"
+        },
+        {
+          "level": 0,
+          "text": "Decision"
+        },
+        {
+          "level": 0,
+          "text": "Stop/Go / Ausnahme / Hebel"
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "Impact: messbare Wirkung für VW Procurement & Risk",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Das Modell verbessert Risiko-Transparenz, Entscheidungsgeschwindigkeit und Effizienz – und liefert Board-geeignete Steuerungskennzahlen."
+        },
+        {
+          "level": 0,
+          "text": "Risikoreduktion"
+        },
+        {
+          "level": 0,
+          "text": "• Hotspot-Lieferanten früh erkennen (Events/Trends)"
+        },
+        {
+          "level": 0,
+          "text": "• Gezielte Mitigation senkt Third-Party Breach Risiko"
+        },
+        {
+          "level": 0,
+          "text": "• Portfolio-Transparenz statt Einzelfall-Panik"
+        },
+        {
+          "level": 0,
+          "text": "Speed in Procurement"
+        },
+        {
+          "level": 0,
+          "text": "• Schnelleres Onboarding (BitSight: -70% Zeit)"
+        },
+        {
+          "level": 0,
+          "text": "• Klare Schwellen für Stop/Go & Renewal"
+        },
+        {
+          "level": 0,
+          "text": "• Weniger „Ping-Pong“ zwischen Funktionen"
+        },
+        {
+          "level": 0,
+          "text": "Effizienz & Governance"
+        },
+        {
+          "level": 0,
+          "text": "• Weniger Compliance-Reporting Aufwand (-40%)"
+        },
+        {
+          "level": 0,
+          "text": "• Revisionssichere Evidence & KPIs"
+        },
+        {
+          "level": 0,
+          "text": "• Managed Service reduziert internen Betriebsaufwand"
+        },
+        {
+          "level": 0,
+          "text": "Quelle: BitSight Company Overview 2025 (Impact-Kennzahlen); Operating Model aus Porsche-Referenz."
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "Risiken & Mitigation",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Wir reduzieren typische Implementierungsrisiken durch eingebettete Validierung, klare Schwellen und Procurement-Hebel."
+        },
+        {
+          "level": 0,
+          "text": "Risiko: Daten/Attribution"
+        },
+        {
+          "level": 0,
+          "text": "• False Positives/Zuordnung zu Suppliern"
+        },
+        {
+          "level": 0,
+          "text": "• Unklare Scope-Grenzen (Subsidiaries)"
+        },
+        {
+          "level": 0,
+          "text": "• Noise durch unpriorisierte Alerts"
+        },
+        {
+          "level": 0,
+          "text": "Mitigation: Prozessdesign"
+        },
+        {
+          "level": 0,
+          "text": "• Validierungspfad vor Supplier-Outreach"
+        },
+        {
+          "level": 0,
+          "text": "• Schwellenwerte & Tiers (MECE) festlegen"
+        },
+        {
+          "level": 0,
+          "text": "• Event-basiertes Triage-Modell"
+        },
+        {
+          "level": 0,
+          "text": "Mitigation: Steuerungshebel"
+        },
+        {
+          "level": 0,
+          "text": "• Kommunikations-Templates + SLA-Fristen"
+        },
+        {
+          "level": 0,
+          "text": "• Contract-Levers (Renewal/Exemptions)"
+        },
+        {
+          "level": 0,
+          "text": "• Gremienrhythmus + Exception-Register"
+        },
+        {
+          "level": 0,
+          "text": "Mitigation basiert auf Porsche-Betriebsmodell und BitSight TPRM Best Practices."
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "Call to Action: Entscheidung & Vorgehen",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Vorstandsentscheid: Budgetfreigabe 2026 für BitSight + MHP Service bei VW – Start mit 90-Tage-Pilot (kritische Lieferanten) und anschließender Skalierung."
+        },
+        {
+          "level": 0,
+          "text": "Entscheidungen heute"
+        },
+        {
+          "level": 0,
+          "text": "• Scope: kritische Lieferanten / Tiers"
+        },
+        {
+          "level": 0,
+          "text": "• Schwellenwerte & Eskalationslogik"
+        },
+        {
+          "level": 0,
+          "text": "• Budgetrahmen & Owner (Procurement)"
+        },
+        {
+          "level": 0,
+          "text": "90 Tage Pilot (VW)"
+        },
+        {
+          "level": 0,
+          "text": "• Setup: Scope, Supplier-Liste, Templates"
+        },
+        {
+          "level": 0,
+          "text": "• Betrieb: Monitoring, Triage, Outreach"
+        },
+        {
+          "level": 0,
+          "text": "• Review: KPI/KRI, Lessons Learned, Rollout-Plan"
+        },
+        {
+          "level": 0,
+          "text": "Rollout & Betrieb 2026"
+        },
+        {
+          "level": 0,
+          "text": "• Scale: Portfolio-Ausweitung + Standardprozesse"
+        },
+        {
+          "level": 0,
+          "text": "• Integration: Sourcing/Renewal + Reporting"
+        },
+        {
+          "level": 0,
+          "text": "• Kontinuierliche Verbesserung (Quarterly)"
+        },
+        {
+          "level": 0,
+          "text": "Referenz: Porsche Betrieb 2026 mit externer Leistung ~239.800€ (Scope: >4.500 Geschäftspartner). VW Budget final abhängig von Partnerzahl & Scope."
+        },
+        {
+          "level": 0,
+          "text": "Quellen: MHP Angebot „Cyber Rating & Monitoring 2026“ (Porsche AG); BitSight Company Overview 2025."
+        }
+      ],
+      "text_boxes": []
+    }
+  ],
+  "target": [
+    {
+      "title": "BitSight in der Beschaffung",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Rollen, Zuarbeit und Arbeitsleistung (Service-Betrieb mit MHP – Risikomanager)"
+        },
+        {
+          "level": 0,
+          "text": "Ziel: Cyber-Risiken in der Lieferkette messbar machen und in Beschaffungsprozesse integrieren – von der Vorauswahl bis zum laufenden Monitoring."
+        },
+        {
+          "level": 0,
+          "text": "Stand: Januar 2026"
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "ZIELBILD",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Wofür setzen wir BitSight in der Beschaffung ein?"
+        },
+        {
+          "level": 0,
+          "text": "Vorauswahl & Onboarding"
+        },
+        {
+          "level": 0,
+          "text": "Frühzeitige Indikatoren zur externen Sicherheitslage eines Lieferanten. Fokus auf kritische/IT-nahe Leistungen und Zeitgewinn vor Vertragsabschluss."
+        },
+        {
+          "level": 0,
+          "text": "Third-Party Risk Monitoring"
+        },
+        {
+          "level": 0,
+          "text": "Kontinuierliche Überwachung eines definierten Lieferanten-Portfolios inkl. Trend und Priorisierung. Unterstützung von TPRM/ISMS-Governance."
+        },
+        {
+          "level": 0,
+          "text": "Steuerung & Reporting"
+        },
+        {
+          "level": 0,
+          "text": "Transparente Kennzahlen für Management, Audits und Risikogremien: Abdeckung, SLA-Erfüllung, Risikotrends und Ausnahmen/Remediation-Status."
+        },
+        {
+          "level": 0,
+          "text": "Kernprinzip"
+        },
+        {
+          "level": 0,
+          "text": "BitSight liefert eine datengetriebene „Outside-in“-Sicht auf Cyber-Risiken. In der Beschaffung wird daraus ein operationalisierter Prozess: Screening → vertragliche Absicherung → kontinuierliche Kontrolle → Eskalation/Remediation."
+        },
+        {
+          "level": 0,
+          "text": "Überblick | BitSight + MHP"
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "LÖSUNG",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "BitSight – Kurzprofil (beschaffungsrelevant)"
+        },
+        {
+          "level": 0,
+          "text": "Was liefert BitSight?"
+        },
+        {
+          "level": 0,
+          "text": "Security Rating (Score) als objektiver, datengetriebener Indikator der extern sichtbaren Cyber-Sicherheitslage"
+        },
+        {
+          "level": 0,
+          "text": "Kontinuierliches Monitoring (Trends/Events) über die Zeit – nicht nur punktuelle Assessments"
+        },
+        {
+          "level": 0,
+          "text": "Third-Party-Transparenz: Portfolio-Sicht auf Lieferanten/Partner inkl. Priorisierung"
+        },
+        {
+          "level": 0,
+          "text": "Grundlage für Governance & Reporting (KPI/KRI) und für Eskalations- und Remediation-Prozesse"
+        },
+        {
+          "level": 0,
+          "text": "Wichtig für die Beschaffung"
+        },
+        {
+          "level": 0,
+          "text": "BitSight ersetzt keine Audits/Pen-Tests. Es ergänzt das ISMS um eine „Outside‑in“-Messgröße, die früh im Sourcing nutzbar ist und im Betrieb kontinuierlich wirkt."
+        },
+        {
+          "level": 0,
+          "text": "Praktische Sicht: Inputs → Entscheidungen"
+        },
+        {
+          "level": 0,
+          "text": "Externe Signale"
+        },
+        {
+          "level": 0,
+          "text": "Exposure, Konfiguration, kompromittierte Systeme, Observables"
+        },
+        {
+          "level": 0,
+          "text": "Rating & Findings"
+        },
+        {
+          "level": 0,
+          "text": "Score/Trend, Domains, Priorisierung, Evidenz"
+        },
+        {
+          "level": 0,
+          "text": "Beschaffungs-Trigger"
+        },
+        {
+          "level": 0,
+          "text": "Screening, Vertragsklauseln, SLA/Remediation, Freigaben"
+        },
+        {
+          "level": 0,
+          "text": "Betrieb"
+        },
+        {
+          "level": 0,
+          "text": "Kontinuierliches Monitoring, Eskalation, Reporting"
+        },
+        {
+          "level": 0,
+          "text": "Überblick | BitSight + MHP"
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "ZUSAMMENARBEIT",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Service-Modell: Betrieb mit MHP (Risikomanager)"
+        },
+        {
+          "level": 0,
+          "text": "Rollen im Zielbetrieb"
+        },
+        {
+          "level": 0,
+          "text": "Beschaffung"
+        },
+        {
+          "level": 0,
+          "text": "Integriert Security-Risiko in Sourcing/Vertrag. Hält Lieferantenstammdaten, Vertrags- und Eskalationspfade aktuell."
+        },
+        {
+          "level": 0,
+          "text": "InfoSec / GRC"
+        },
+        {
+          "level": 0,
+          "text": "Definiert Anforderungen/Schwellenwerte, bewertet Ausnahmen, entscheidet über Risiken und Freigaben bei kritischen Fällen."
+        },
+        {
+          "level": 0,
+          "text": "MHP Risikomanager (Service)"
+        },
+        {
+          "level": 0,
+          "text": "Operativer Programm- & Tool-Betrieb: Monitoring, Triage, Lieferantenkommunikation, Remediation-Tracking und Reporting."
+        },
+        {
+          "level": 0,
+          "text": "Typische Service-Bausteine (MHP)"
+        },
+        {
+          "level": 0,
+          "text": "Lieferanten-Portfolio"
+        },
+        {
+          "level": 0,
+          "text": "Scope, Tiering, Ownership, Ansprechpartner"
+        },
+        {
+          "level": 0,
+          "text": "Monitoring & Triage"
+        },
+        {
+          "level": 0,
+          "text": "Bewertung von Findings, False-Positive-Handling, Priorisierung"
+        },
+        {
+          "level": 0,
+          "text": "Kommunikation"
+        },
+        {
+          "level": 0,
+          "text": "Lieferantenansprache, Fristen, Evidenzanforderungen, Eskalation"
+        },
+        {
+          "level": 0,
+          "text": "Remediation Tracking"
+        },
+        {
+          "level": 0,
+          "text": "Maßnahmenpläne, SLAs, Status, Nachweise"
+        },
+        {
+          "level": 0,
+          "text": "Governance & Reporting"
+        },
+        {
+          "level": 0,
+          "text": "KPI/KRI, Management- und Audit-Reports, Gremienvorlagen"
+        },
+        {
+          "level": 0,
+          "text": "Continuous Improvement"
+        },
+        {
+          "level": 0,
+          "text": "Schwellenwerte, Prozesse, Lessons Learned, Tool-Optimierung"
+        },
+        {
+          "level": 0,
+          "text": "Überblick | BitSight + MHP"
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "BESCHAFFUNG",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Rolle der Beschaffung im BitSight-Prozess"
+        },
+        {
+          "level": 0,
+          "text": "Kernaufgaben"
+        },
+        {
+          "level": 0,
+          "text": "Einbettung von Cyber-Risikokriterien in Beschaffungsrichtlinien, Ausschreibungen und Entscheidungslogik"
+        },
+        {
+          "level": 0,
+          "text": "Vertragliche Absicherung: Security-Anforderungen, Audit-/Nachweisklauseln, SLA für Remediation, Eskalationsrechte"
+        },
+        {
+          "level": 0,
+          "text": "Lieferanten-Portfolio & Kritikalität (Tiering): Priorisierung der zu monitorenden Anbieter"
+        },
+        {
+          "level": 0,
+          "text": "Schnittstelle zu Supplier Management: Ansprechpartner, Eskalationsketten, regelmäßige Reviews"
+        },
+        {
+          "level": 0,
+          "text": "Transparenz für Governance: Status/Abdeckung, Ausnahmebegründungen, Entscheidungsvorlagen"
+        },
+        {
+          "level": 0,
+          "text": "RACI – wer macht was?"
+        },
+        {
+          "level": 0,
+          "text": "A=Accountable, R=Responsible, C=Consulted, I=Informed"
+        },
+        {
+          "level": 0,
+          "text": "Aktivität"
+        },
+        {
+          "level": 0,
+          "text": "Beschaffung"
+        },
+        {
+          "level": 0,
+          "text": "InfoSec/GRC"
+        },
+        {
+          "level": 0,
+          "text": "MHP Risk Mgr"
+        },
+        {
+          "level": 0,
+          "text": "Scope & Tiering"
+        },
+        {
+          "level": 0,
+          "text": "A/R"
+        },
+        {
+          "level": 0,
+          "text": "C"
+        },
+        {
+          "level": 0,
+          "text": "R"
+        },
+        {
+          "level": 0,
+          "text": "Onboarding-Trigger"
+        },
+        {
+          "level": 0,
+          "text": "A/R"
+        },
+        {
+          "level": 0,
+          "text": "C"
+        },
+        {
+          "level": 0,
+          "text": "C"
+        },
+        {
+          "level": 0,
+          "text": "Schwellenwerte/Policy"
+        },
+        {
+          "level": 0,
+          "text": "C"
+        },
+        {
+          "level": 0,
+          "text": "A/R"
+        },
+        {
+          "level": 0,
+          "text": "C"
+        },
+        {
+          "level": 0,
+          "text": "Monitoring & Triage"
+        },
+        {
+          "level": 0,
+          "text": "I"
+        },
+        {
+          "level": 0,
+          "text": "C"
+        },
+        {
+          "level": 0,
+          "text": "A/R"
+        },
+        {
+          "level": 0,
+          "text": "Eskalation & Entscheidung"
+        },
+        {
+          "level": 0,
+          "text": "C"
+        },
+        {
+          "level": 0,
+          "text": "A/R"
+        },
+        {
+          "level": 0,
+          "text": "R"
+        },
+        {
+          "level": 0,
+          "text": "Reporting an Gremien"
+        },
+        {
+          "level": 0,
+          "text": "A"
+        },
+        {
+          "level": 0,
+          "text": "A"
+        },
+        {
+          "level": 0,
+          "text": "R"
+        },
+        {
+          "level": 0,
+          "text": "Überblick | BitSight + MHP"
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "ZUARBEIT",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Zuarbeit seitens Beschaffung (Inputs)"
+        },
+        {
+          "level": 0,
+          "text": "Checkliste für Setup & Betrieb"
+        },
+        {
+          "level": 0,
+          "text": "Stammdaten & Scope"
+        },
+        {
+          "level": 0,
+          "text": "Lieferantenliste inkl. IDs (ERP/SRM), Domains/Legal Entity"
+        },
+        {
+          "level": 0,
+          "text": "Kritikalitäts-Tiering (z. B. IT-DL, Datenverarbeiter, OT-nahe Supplier)"
+        },
+        {
+          "level": 0,
+          "text": "Vertragstyp, Laufzeit, Renewal-Termine"
+        },
+        {
+          "level": 0,
+          "text": "Ansprechpartner & Eskalationspfad"
+        },
+        {
+          "level": 0,
+          "text": "Contracting & Compliance"
+        },
+        {
+          "level": 0,
+          "text": "Security-Klauseln, Nachweise, Audit-/Assessments, Subdienstleister"
+        },
+        {
+          "level": 0,
+          "text": "Remediation-SLA und Vertragshebel (z. B. Preis-/Leistung, Kündigungsrechte)"
+        },
+        {
+          "level": 0,
+          "text": "Datenschutz-/IS-Anhänge (z. B. TOMs, AVV, ISO/SOC)"
+        },
+        {
+          "level": 0,
+          "text": "Dokumentation für Audit/Revision (Entscheidungslogik, Ausnahmen)"
+        },
+        {
+          "level": 0,
+          "text": "Prozess-Trigger"
+        },
+        {
+          "level": 0,
+          "text": "Einsatzpunkte: Ausschreibung, Auswahl, Renewal, Major Change"
+        },
+        {
+          "level": 0,
+          "text": "Stop/Go-Regeln und Ausnahmeprozess"
+        },
+        {
+          "level": 0,
+          "text": "Kommunikationsvorlagen an Lieferanten (Requests, Eskalation)"
+        },
+        {
+          "level": 0,
+          "text": "Betrieb / Supplier Management"
+        },
+        {
+          "level": 0,
+          "text": "Eskalation an Contract/Business Owner bei Schwellenwertverletzung"
+        },
+        {
+          "level": 0,
+          "text": "Teilnahme an Reviews (kritische Lieferanten, Ausnahmen, Trends)"
+        },
+        {
+          "level": 0,
+          "text": "Pflege des Vendor-Inventars und Abgleich mit BitSight-Attribution"
+        },
+        {
+          "level": 0,
+          "text": "Überblick | BitSight + MHP"
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "LEISTUNG",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Arbeitsleistung / Deliverables (mit MHP Risikomanager)"
+        },
+        {
+          "level": 0,
+          "text": "1) Setup & Enablement"
+        },
+        {
+          "level": 0,
+          "text": "Use-Case & Scope (kritische Lieferanten, Domänen/Attribution, Tiering)"
+        },
+        {
+          "level": 0,
+          "text": "Policy/Schwellenwerte & Ausnahmeprozess (Stop/Go, Remediation-Fristen)"
+        },
+        {
+          "level": 0,
+          "text": "Prozessdesign: Sourcing- und Renewal-Integration, Rollen/RACI, Templates"
+        },
+        {
+          "level": 0,
+          "text": "Tool-Setup (Accounts, Rollen, Dashboards, Portfolio-Struktur)"
+        },
+        {
+          "level": 0,
+          "text": "2) Operativer Betrieb"
+        },
+        {
+          "level": 0,
+          "text": "Kontinuierliches Monitoring & Ereignis-Triage (Priorisierung, Validierung)"
+        },
+        {
+          "level": 0,
+          "text": "Lieferantenkommunikation und Koordination der Nachweise/Remediation"
+        },
+        {
+          "level": 0,
+          "text": "Ticketing/Tracking, SLA-Überwachung, Eskalationsmanagement"
+        },
+        {
+          "level": 0,
+          "text": "Qualitätssicherung: False Positives, Attribution-Korrekturen"
+        },
+        {
+          "level": 0,
+          "text": "3) Governance & Improvement"
+        },
+        {
+          "level": 0,
+          "text": "Regelberichte (KPI/KRI) für Beschaffung/InfoSec/Management"
+        },
+        {
+          "level": 0,
+          "text": "Reviews kritischer Lieferanten inkl. Maßnahmen- und Risikoentscheidungen"
+        },
+        {
+          "level": 0,
+          "text": "Optimierung Schwellenwerte/Portfolio, Lessons Learned, Audit-Unterstützung"
+        },
+        {
+          "level": 0,
+          "text": "Skalierung (mehr Supplier, mehr Regionen, Integration weiterer Quellen)"
+        },
+        {
+          "level": 0,
+          "text": "Überblick | BitSight + MHP"
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "END-TO-END",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Prozessübersicht: Sourcing → Vertrag → Betrieb"
+        },
+        {
+          "level": 0,
+          "text": "1"
+        },
+        {
+          "level": 0,
+          "text": "Bedarf & Tiering"
+        },
+        {
+          "level": 0,
+          "text": "Kritikalität, Daten/IT-Nähe, Scope"
+        },
+        {
+          "level": 0,
+          "text": "Owner: Beschaffung + InfoSec"
+        },
+        {
+          "level": 0,
+          "text": "2"
+        },
+        {
+          "level": 0,
+          "text": "Screening"
+        },
+        {
+          "level": 0,
+          "text": "BitSight Rating / erste Findings"
+        },
+        {
+          "level": 0,
+          "text": "Owner: MHP"
+        },
+        {
+          "level": 0,
+          "text": "3"
+        },
+        {
+          "level": 0,
+          "text": "Sourcing-Entscheidung"
+        },
+        {
+          "level": 0,
+          "text": "Stop/Go, Ausnahmen, Maßnahmenplan"
+        },
+        {
+          "level": 0,
+          "text": "Owner: InfoSec + Beschaffung"
+        },
+        {
+          "level": 0,
+          "text": "4"
+        },
+        {
+          "level": 0,
+          "text": "Vertrag & SLA"
+        },
+        {
+          "level": 0,
+          "text": "Klauseln, Remediation-Fristen, Nachweise"
+        },
+        {
+          "level": 0,
+          "text": "Owner: Beschaffung"
+        },
+        {
+          "level": 0,
+          "text": "5"
+        },
+        {
+          "level": 0,
+          "text": "Go-Live"
+        },
+        {
+          "level": 0,
+          "text": "Onboarding ins Monitoring-Portfolio"
+        },
+        {
+          "level": 0,
+          "text": "Owner: MHP"
+        },
+        {
+          "level": 0,
+          "text": "6"
+        },
+        {
+          "level": 0,
+          "text": "Monitoring & Eskalation"
+        },
+        {
+          "level": 0,
+          "text": "Triage, Tickets, Eskalation, Review"
+        },
+        {
+          "level": 0,
+          "text": "Owner: MHP + InfoSec"
+        },
+        {
+          "level": 0,
+          "text": "Eskalationslogik (Beispiel)"
+        },
+        {
+          "level": 0,
+          "text": "Unterschreitung Schwellenwert → Ticket/Anfrage an Lieferant (MHP) → Frist & Maßnahmenplan → Eskalation an Contract Owner/Beschaffung → Risikoentscheidung (InfoSec) → Maßnahmen/Vertragshebel."
+        },
+        {
+          "level": 0,
+          "text": "Überblick | BitSight + MHP"
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "STEUERUNG",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Governance & KPIs (Beispiele)"
+        },
+        {
+          "level": 0,
+          "text": "Abdeckung"
+        },
+        {
+          "level": 0,
+          "text": "• % kritischer Lieferanten im Monitoring"
+        },
+        {
+          "level": 0,
+          "text": "• # Lieferanten nach Tier"
+        },
+        {
+          "level": 0,
+          "text": "• Portfolio-Drift (Neu/Offboarding)"
+        },
+        {
+          "level": 0,
+          "text": "Risikoprofil"
+        },
+        {
+          "level": 0,
+          "text": "• Score-Verteilung (A/B/C)"
+        },
+        {
+          "level": 0,
+          "text": "• Trend (30/90 Tage)"
+        },
+        {
+          "level": 0,
+          "text": "• Top-Risiko-Domänen/Findings"
+        },
+        {
+          "level": 0,
+          "text": "Wirksamkeit"
+        },
+        {
+          "level": 0,
+          "text": "• Time-to-Remediate"
+        },
+        {
+          "level": 0,
+          "text": "• SLA-Erfüllungsquote"
+        },
+        {
+          "level": 0,
+          "text": "• # Eskalationen / Ausnahmen"
+        },
+        {
+          "level": 0,
+          "text": "Procurement Outcomes"
+        },
+        {
+          "level": 0,
+          "text": "• Renewal-Entscheidungen mit Risikobeitrag"
+        },
+        {
+          "level": 0,
+          "text": "• Vertragliche Nachweise (Quote)"
+        },
+        {
+          "level": 0,
+          "text": "• Lieferanten mit Maßnahmenplan"
+        },
+        {
+          "level": 0,
+          "text": "Cadence (Vorschlag): Monatlich Operativer Review (MHP + InfoSec). Quartalsweise Management-Report & kritische Lieferanten. Ad hoc Eskalation bei Schwellenwertverletzung."
+        },
+        {
+          "level": 0,
+          "text": "Überblick | BitSight + MHP"
+        }
+      ],
+      "text_boxes": []
+    },
+    {
+      "title": "UMSETZUNG",
+      "bullets": [
+        {
+          "level": 0,
+          "text": "Nächste Schritte / Entscheidungsbedarf"
+        },
+        {
+          "level": 0,
+          "text": "1) Scope festlegen"
+        },
+        {
+          "level": 0,
+          "text": "Welche Lieferanten (Tier 1/2), welche Gesellschaften/Regionen, welche Domains/Attribution?"
+        },
+        {
+          "level": 0,
+          "text": "2) Policy & Schwellenwerte"
+        },
+        {
+          "level": 0,
+          "text": "Stop/Go-Kriterien im Sourcing, Remediation-Fristen, Ausnahmeprozess und Entscheidungsgremium."
+        },
+        {
+          "level": 0,
+          "text": "3) Contracting-Paket"
+        },
+        {
+          "level": 0,
+          "text": "Standardklauseln, SLA-Mechanik, Kommunikationspaket an Lieferanten, Dokumentationsanforderungen."
+        },
+        {
+          "level": 0,
+          "text": "4) Operating Model"
+        },
+        {
+          "level": 0,
+          "text": "RACI finalisieren, Ticket-/Eskalationspfad, Reporting-Cadence, Übergabe an MHP Risikomanager."
+        },
+        {
+          "level": 0,
+          "text": "5) Pilot & Skalierung"
+        },
+        {
+          "level": 0,
+          "text": "Pilot mit ausgewähltem Portfolio, Lessons Learned, Rollout auf weitere Supplier/Warengruppen."
+        },
+        {
+          "level": 0,
+          "text": "Überblick | BitSight + MHP"
+        }
+      ],
+      "text_boxes": []
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Kategorie,Budget (€),Icon,Beschreibung
+Wohnen,1500,🏠,"Miete, Nebenkosten, Möbel"
+Transport,300,🚗,"Auto, ÖPNV, Taxi, Benzin"
+Lebensmittel,500,🛒,"Supermarkt, Restaurants"
+Business,200,💼,"Software, Tools, Büromaterial"
+Reisen,1000,✈️,"Flüge, Hotels, Aktivitäten"
+Shopping,300,🛍️,"Kleidung, Elektronik, Sonstiges"
+Gesundheit,150,🏥,"Arzt, Apotheke, Versicherung"
+Utilities,200,💡,"Strom, Internet, Telefon"
+Bildung,100,🎓,"Kurse, Bücher"
+Unterhaltung,100,🎮,"Streaming, Gaming, Events"
+Finanzen,50,💳,"Steuern, Gebühren, Zinsen"
+Sonstiges,100,🎁,"Alles Andere"
