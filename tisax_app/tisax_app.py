@@ -78,12 +78,13 @@ st.title("🔒 TISAX Risikobewertung")
 st.markdown("Porsche AG - Interne Bewertung für Lieferanten & Dienstleister")
 
 # Main tabs
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "📋 Allgemeine Informationen",
     "🔐 Informationssicherheit",
     "📊 Datenschutz",
     "🏭 Prototypenschutz",
-    "✅ Ergebnis"
+    "✅ Ergebnis",
+    "ℹ️ Ausnahmeregelungen"
 ])
 
 # TAB 1: General Information
@@ -317,6 +318,76 @@ with tab5:
             if st.button("🔄 Formular zurücksetzen", use_container_width=True):
                 st.session_state.assessment.reset()
                 st.rerun()
+
+# TAB 6: Exceptions/Exemptions
+with tab6:
+    st.subheader("Ausnahmeregelungen: Wann TISAX NICHT erforderlich ist")
+    
+    st.markdown("""
+    Eine **TISAX-Zertifizierung des Geschäftspartners ist NICHT notwendig**, wenn:
+    """)
+    
+    st.markdown("""
+    ### 1️⃣ Behördlich regulierte Institutionen
+    
+    Das Geschäftspartnerunternehmen ist eine der folgenden behördlich regulierten Institutionen:
+    
+    - 🏦 **Finanzinstitute** (Banken, Versicherungen)
+    - 👨‍⚕️ **Ärzte**
+    - 🏥 **Krankenkassen**
+    - 📊 **Steuerberater**
+    - ⚖️ **Rechtsanwälte**
+    - 👔 **Wirtschaftsprüfer** (im Rahmen einer amtlichen Prüfung)
+    
+    **Grund:** Gesetzliche Bestimmungen zur Vertraulichkeit
+    """)
+    
+    st.markdown("""
+    ### 2️⃣ Tochterunternehmen & Konzerngesellschaften
+    
+    Das Geschäftspartnerunternehmen ist:
+    - Ein **Tochterunternehmen, bei dem Porsche zu mehr als 50% beteiligt ist**, ODER
+    - Eine **Konzerngesellschaft der Volkswagen Gruppe**
+    """)
+    
+    st.markdown("""
+    ### 3️⃣ Externe Infrastruktur
+    
+    Der Geschäftspartner speichert oder verarbeitet **Porsche-Informationen NICHT** auf:
+    - Seiner eigenen Infrastruktur
+    - Seinem eigenen Standort
+    
+    *Beispiel: Reine Service-Provider, die keine Daten lagern*
+    """)
+    
+    st.markdown("""
+    ---
+    
+    ## ⚠️ Risikobewertung: Wann NICHT erforderlich
+    
+    Eine **Risikobewertung des Geschäftspartners ist NICHT notwendig**, wenn:
+    
+    ### 📦 PM-klassifizierte Lieferanten
+    
+    Der Lieferant ist als **PM (Produktionsmaterial)** klassifiziert.
+    
+    ⚠️ **ABER:** Auch bei PM-Lieferanten muss das TISAX-Prüfziel für **"High Availability"** eingefordert werden.
+    """)
+    
+    st.markdown("""
+    ---
+    
+    ## 📚 Weitere Informationen
+    
+    Weitere Informationen zu TISAX und diesen Regelungen finden Sie auf der offiziellen Porsche/TISAX Seite.
+    
+    **Kontakt:** Bei Fragen wenden Sie sich an Ihre Porsche-Kontaktadresse.
+    """)
+    
+    st.info("""
+    💡 **Hinweis:** Diese Ausnahmeregelungen sind die aktuellen Bestimmungen. 
+    Für aktuelle Updates konsultieren Sie bitte die offizielle Porsche-Dokumentation oder Ihre Kontaktperson.
+    """)
 
 # Footer
 st.markdown("---")
