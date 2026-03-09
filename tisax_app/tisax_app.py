@@ -184,6 +184,17 @@ with tab2:
             key="vertraulichkeit"
         )
         st.session_state.assessment.data["vertraulichkeit"] = vertraulichkeit
+        
+        with st.expander("ℹ️ Was ist Vertraulichkeit?"):
+            st.markdown("""
+            **Definition:** Sicherstellung der ausschließlich berechtigten Nutzung von Informationen und dabei insbesondere die Verhinderung von unberechtigter Veröffentlichung von Informationen.
+            
+            **Beispiele:**
+            - 🟢 **Öffentlich:** Pressemeldungen, Produktkataloge für Kunden
+            - 🟡 **Intern:** Geschäftliche Kommunikationsdaten (Telefonnummern, E-Mail-Adressen), betriebliche Vorgaben zum Arbeitsschutz, Arbeitsordnung
+            - 🟠 **Vertraulich:** Personenbezogene Daten über dienstliche Kommunikation (z.B. Gehaltsdaten), Budgetplanungen, Revisionsberichte
+            - 🔴 **Geheim:** Besondere Arten personenbezogener Daten (z.B. Gesundheitsdaten), Cycle Pläne, strategische Unternehmenspläne, Entwurfszeichnungen von Prototypen
+            """)
     
     with col2:
         st.markdown("**2.2 Integrität**")
@@ -194,6 +205,17 @@ with tab2:
             key="integritat"
         )
         st.session_state.assessment.data["integritat"] = integritat
+        
+        with st.expander("ℹ️ Was ist Integrität?"):
+            st.markdown("""
+            **Definition:** Sicherstellung, dass Informationen nicht unbeabsichtigt oder unberechtigt verändert werden.
+            
+            **Beispiele:**
+            - 🟢 **Kein Schutzbedarf:** (Keine spezifischen Beispiele)
+            - 🟡 **Normaler Schutzbedarf:** Standortpläne, Organigramme, einzelne interne Telefonnummern
+            - 🟠 **Hoher Schutzbedarf:** JIT-Aufträge, Pressemeldungen, Inhalte des Internetauftritts, Produktionssteuerungsdaten
+            - 🔴 **Sehr hoher Schutzbedarf:** Bilanzierung (z.B. Jahresabschluss), Patente, kryptographische Schlüssel, Gehaltsabrechnungen
+            """)
     
     with col3:
         st.markdown("**2.3 Verfügbarkeit**")
@@ -204,6 +226,17 @@ with tab2:
             key="verfugbarkeit"
         )
         st.session_state.assessment.data["verfugbarkeit"] = verfugbarkeit
+        
+        with st.expander("ℹ️ Was ist Verfügbarkeit?"):
+            st.markdown("""
+            **Definition:** Sicherstellung, dass die Verfügbarkeit von Informationen nicht aufgrund von unerwünschten Handlungen oder Ereignissen beeinträchtigt wird.
+            
+            **Beispiele:**
+            - 🟢 **Kein Schutzbedarf:** Intranet-Anwendung mit allgemeinen Mitarbeiterinformationen
+            - 🟡 **Normaler Schutzbedarf:** Bewerberportal
+            - 🟠 **Hoher Schutzbedarf:** Gehaltsabrechnung, Buchhaltung
+            - 🔴 **Sehr hoher Schutzbedarf:** IT-Systeme, deren Ausfall einen unmittelbaren Produktionsstopp zur Folge hat
+            """)
 
 # TAB 3: Data Protection
 with tab3:
