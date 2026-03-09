@@ -80,9 +80,9 @@ st.markdown("Porsche AG - Interne Bewertung für Lieferanten & Dienstleister")
 # Main tabs
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📋 Allgemeine Informationen",
-    "🔐 Informationssicherheit",
-    "📊 Datenschutz",
-    "🏭 Prototypenschutz",
+    "🔐 Informationssicherheit *",
+    "📊 Datenschutz *",
+    "🏭 Prototypenschutz *",
     "✅ Ergebnis"
 ])
 
@@ -327,15 +327,34 @@ with tab5:
             "❌ **Pflichtfelder erforderlich:** Bitte füllen Sie Kontaktperson und Abteilung aus (markiert mit *)."
         )
     
+    # Check mandatory tabs
+    mandatory_tabs_filled = (
+        st.session_state.assessment.data.get("vertraulichkeit") != "Off" and
+        st.session_state.assessment.data.get("integritat") != "Off" and
+        st.session_state.assessment.data.get("verfugbarkeit") != "Off" and
+        st.session_state.assessment.data.get("personenbezogene_daten") != "Off" and
+        st.session_state.assessment.data.get("besondere_kategorien") != "Off" and
+        st.session_state.assessment.data.get("bauteile") != "Off" and
+        st.session_state.assessment.data.get("fahrzeuge") != "Off" and
+        st.session_state.assessment.data.get("erprobung") != "Off" and
+        st.session_state.assessment.data.get("events") != "Off"
+    )
+    
     # Run assessment
     result = st.session_state.assessment.assess()
     
     # Check if form is complete
     if not mandatory_fields_filled:
-        st.info("⏳ Warten auf Pflichtfelder...")
+        st.info("⏳ Warten auf Pflichtfelder (Tab 1)...")
+    elif not mandatory_tabs_filled:
+        st.error(
+            "❌ **Alle Tabs müssen vollständig ausgefüllt sein:** "
+            "Bitte wählen Sie in den Tabs 🔐 Informationssicherheit*, 📊 Datenschutz* und 🏭 Prototypenschutz* "
+            "jeweils eine Option aus (mit * markiert)."
+        )
     elif not result["form_complete"]:
         st.warning(
-            "⚠️ **Bitte füllen Sie alle Felder in den Tabs 2, 3 und 4 aus** um die Bewertung zu erhalten."
+            "⚠️ **Bewertung konnte nicht durchgeführt werden.**"
         )
     elif result["tisax_required"] is None:
         st.info("Bewertung wird berechnet...")
@@ -378,7 +397,7 @@ with tab5:
         st.markdown("---")
         col1, col2, col3 = st.columns([1, 1, 2])
         with col1:
-            if st.button("📥 Export als PDF", use_container_width=True, disabled=not mandatory_fields_filled):
+            if st.button("📥 Export als PDF", use_container_width=True, disabled=not (mandatory_fields_filled and mandatory_tabs_filled)):
                 exporter = TISAXPDFExporter()
                 pdf_data = exporter.generate_pdf(
                     st.session_state.assessment.data,
