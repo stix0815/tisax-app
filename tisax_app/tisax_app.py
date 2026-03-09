@@ -80,9 +80,9 @@ st.markdown("Porsche AG - Interne Bewertung für Lieferanten & Dienstleister")
 # Main tabs
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📋 Allgemeine Informationen",
-    "🔐 Informationssicherheit *",
-    "📊 Datenschutz *",
-    "🏭 Prototypenschutz *",
+    "🔐 Informationssicherheit",
+    "📊 Datenschutz",
+    "🏭 Prototypenschutz",
     "✅ Ergebnis"
 ])
 
@@ -176,7 +176,7 @@ with tab2:
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        st.markdown("**2.1 Vertraulichkeit**")
+        st.markdown("**2.1 Vertraulichkeit ***")
         vertraulichkeit = st.selectbox(
             "Vertraulichkeit",
             ["Off", "Öffentlich", "Intern", "Vertraulich - Hoher Schutzbedarf", "Geheim - Sehr hoher Schutzbedarf"],
@@ -197,7 +197,7 @@ with tab2:
             """)
     
     with col2:
-        st.markdown("**2.2 Integrität**")
+        st.markdown("**2.2 Integrität ***")
         integritat = st.selectbox(
             "Integrität",
             ["Off", "Kein Schutzbedarf", "Normaler Schutzbedarf", "Hoher Schutzbedarf", "Sehr hoher Schutzbedarf"],
@@ -218,7 +218,7 @@ with tab2:
             """)
     
     with col3:
-        st.markdown("**2.3 Verfügbarkeit**")
+        st.markdown("**2.3 Verfügbarkeit ***")
         verfugbarkeit = st.selectbox(
             "Verfügbarkeit",
             ["Off", "Kein Schutzbedarf", "Normaler Schutzbedarf", "Hoher Schutzbedarf", "Sehr hoher Schutzbedarf"],
@@ -246,7 +246,7 @@ with tab3:
     col1, col2 = st.columns(2)
     
     with col1:
-        st.markdown("**3.1 Personenbezogene Daten**")
+        st.markdown("**3.1 Personenbezogene Daten ***")
         st.markdown("Erhebt oder verarbeitet der Dienstleister personenbezogene Daten im Auftrag?")
         pd = st.selectbox(
             "Personenbezogene Daten",
@@ -257,7 +257,7 @@ with tab3:
         st.session_state.assessment.data["personenbezogene_daten"] = pd
     
     with col2:
-        st.markdown("**3.2 Besondere Kategorien**")
+        st.markdown("**3.2 Besondere Kategorien ***")
         st.markdown("Erhebt/verarbeitet der Dienstleister besondere Kategorien von Daten?")
         bkpd = st.selectbox(
             "Besondere Kategorien",
@@ -275,7 +275,7 @@ with tab4:
     col1, col2 = st.columns(2)
     
     with col1:
-        st.markdown("**4.1 Prototypen-Bauteile**")
+        st.markdown("**4.1 Prototypen-Bauteile ***")
         bauteile = st.selectbox(
             "Bauteile",
             ["Off", "Ja", "Nein"],
@@ -284,7 +284,7 @@ with tab4:
         )
         st.session_state.assessment.data["bauteile"] = bauteile
         
-        st.markdown("**4.3 Erprobungsfahrzeuge**")
+        st.markdown("**4.3 Erprobungsfahrzeuge ***")
         erprobung = st.selectbox(
             "Erprobung",
             ["Off", "Ja", "Nein"],
@@ -294,7 +294,7 @@ with tab4:
         st.session_state.assessment.data["erprobung"] = erprobung
     
     with col2:
-        st.markdown("**4.2 Prototypenfahrzeuge**")
+        st.markdown("**4.2 Prototypenfahrzeuge ***")
         fahrzeuge = st.selectbox(
             "Fahrzeuge",
             ["Off", "Ja", "Nein"],
@@ -303,7 +303,7 @@ with tab4:
         )
         st.session_state.assessment.data["fahrzeuge"] = fahrzeuge
         
-        st.markdown("**4.4 Prototypen bei Events**")
+        st.markdown("**4.4 Prototypen bei Events ***")
         events = st.selectbox(
             "Events/Shootings",
             ["Off", "Ja", "Nein"],
