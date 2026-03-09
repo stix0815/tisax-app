@@ -318,6 +318,19 @@ with tab4:
         )
         st.session_state.assessment.data["bauteile"] = bauteile
         
+        with st.expander("ℹ️ Was sind Prototypen-Bauteile?"):
+            st.markdown("""
+            **Definition:** Komponenten und Teile von Fahrzeugen, die sich noch in der Entwicklungs- oder Testphase befinden.
+            
+            **Beispiele:**
+            - 🔧 Motorenkomponenten in Entwicklung
+            - ⚙️ Getriebeteile
+            - 🤖 Fahrassistenzsysteme (ADAS)
+            - 🛑 Bremssysteme
+            - 💻 Elektronische Steuergeräte (ECU)
+            - 🏎️ Karosserieteile mit neuem Design
+            """)
+        
         st.markdown("**4.3 Erprobungsfahrzeuge** *")
         erprobung = st.selectbox(
             "Erprobung",
@@ -326,6 +339,18 @@ with tab4:
             key="erprobung"
         )
         st.session_state.assessment.data["erprobung"] = erprobung
+        
+        with st.expander("ℹ️ Was sind Erprobungsfahrzeuge?"):
+            st.markdown("""
+            **Definition:** Fahrzeuge, die zu Test- und Validierungszwecken unter realen Bedingungen eingesetzt werden.
+            
+            **Beispiele:**
+            - 🛣️ Fahrzeuge in der Straßenerprobung (Real World Testing)
+            - 💥 Crash-Test-Fahrzeuge
+            - ❄️ Klimakammer-Test-Fahrzeuge
+            - 📊 Langzeittest-Fahrzeuge
+            - 🔧 Fahrzeuge mit Beta-Software/Features
+            """)
     
     with col2:
         st.markdown("**4.2 Prototypenfahrzeuge** *")
@@ -337,6 +362,18 @@ with tab4:
         )
         st.session_state.assessment.data["fahrzeuge"] = fahrzeuge
         
+        with st.expander("ℹ️ Was sind Prototypenfahrzeuge?"):
+            st.markdown("""
+            **Definition:** Fahrzeuge in frühen Entwicklungsstadien, die noch nicht für den Markt bereit sind.
+            
+            **Beispiele:**
+            - 🚗 Pre-Production-Fahrzeuge
+            - 🎯 Demonstrationsfahrzeuge mit neuer Technologie
+            - ⚡ Fahrzeuge mit experimentellen Antrieben (elektrisch, Wasserstoff)
+            - 🎨 Fahrzeuge mit neuen Designelementen
+            - 📈 Fahrzeuge in verschiedenen Entwicklungsphasen (Alpha, Beta)
+            """)
+        
         st.markdown("**4.4 Prototypen bei Events** *")
         events = st.selectbox(
             "Events/Shootings",
@@ -345,6 +382,18 @@ with tab4:
             key="events"
         )
         st.session_state.assessment.data["events"] = events
+        
+        with st.expander("ℹ️ Was sind Prototypen bei Events?"):
+            st.markdown("""
+            **Definition:** Prototypen und noch nicht öffentliche Fahrzeuge, die bei Events, Fotoshootings oder Präsentationen gezeigt werden.
+            
+            **Beispiele:**
+            - 🎪 Fahrzeuge bei Auto-Shows (IAA, Geneva, etc.)
+            - 📸 Fotoshootings für Marketing/Werbung
+            - 📰 Testfahrten bei Journalisten
+            - 🎤 Pressefahrten mit noch nicht offiziellen Modellen
+            - ✨ Events mit zukünftigen Fahrzeugmodellen
+            """)
 
 # TAB 5: Results
 with tab5:
