@@ -142,29 +142,6 @@ class TISAXPDFExporter:
         story.append(Paragraph("_" * 60, self.styles['Normal']))
         story.append(Paragraph("Unterschrift &amp; Datum", self.styles['Normal']))
         
-        # Exceptions Section
-        story.append(Spacer(1, 1*cm))
-        story.append(PageBreak())
-        story.append(Paragraph("Ausnahmeregelungen", self.styles['SectionHeading']))
-        story.append(Spacer(1, 0.3*cm))
-        
-        exceptions_text = """
-        <b>Eine TISAX-Zertifizierung ist NICHT notwendig, wenn:</b><br/><br/>
-        
-        <b>1. Behördlich regulierte Institutionen:</b><br/>
-        Das Unternehmen ist eine Finanzinstitution, Arztpraxis, Krankenkasse, Steuerberater, Rechtsanwalt oder Wirtschaftsprüfer (gemäß gesetzlichen Vertraulichkeitsbestimmungen).<br/><br/>
-        
-        <b>2. Tochterunternehmen/Konzerngesellschaften:</b><br/>
-        Das Unternehmen ist ein Tochterunternehmen, bei dem Porsche zu mehr als 50% beteiligt ist, oder eine Volkswagen Konzerngesellschaft.<br/><br/>
-        
-        <b>3. Externe Infrastruktur:</b><br/>
-        Der Geschäftspartner speichert oder verarbeitet Porsche-Informationen nicht auf seiner eigenen Infrastruktur oder seinem Standort.<br/><br/>
-        
-        <b>Eine Risikobewertung ist NICHT notwendig, wenn:</b><br/>
-        Das Unternehmen als PM (Produktionsmaterial) klassifiziert ist. Jedoch muss auch dann das TISAX-Prüfziel &quot;High Availability&quot; eingefordert werden.
-        """
-        story.append(Paragraph(exceptions_text, self.styles['Normal']))
-        
         # Footer
         story.append(Spacer(1, 1*cm))
         story.append(Paragraph("Porsche AG - Interne Nutzung<br/>Dieses Dokument ist vertraulich.", self.styles['Normal']))
