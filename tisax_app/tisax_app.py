@@ -255,6 +255,23 @@ with tab3:
             key="personenbezogene_daten"
         )
         st.session_state.assessment.data["personenbezogene_daten"] = pd
+        
+        with st.expander("ℹ️ Was sind Personenbezogene Daten?"):
+            st.markdown("""
+            **Definition:** Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen.
+            
+            **Beispiele:**
+            - Namen und Adressen
+            - E-Mail-Adressen und Telefonnummern
+            - Mitarbeiterdaten
+            - Kundeninformationen
+            - Gehaltsdaten
+            - Alle anderen Daten, die eine Person identifizieren können
+            
+            **Weiterführende Informationen:**
+            - 📄 [Auftragsverarbeiter](https://porsche.sharepoint.com/sites/CarreraOnline_PAG_Datenschutz/SitePages/Auftragsverarbeiter.aspx)
+            - 📄 [Personenbezogene Daten](https://porsche.sharepoint.com/sites/CarreraOnline_PAG_Datenschutz/SitePages/Personenbezogene-Daten.aspx)
+            """)
     
     with col2:
         st.markdown("**3.2 Besondere Kategorien** *")
@@ -266,6 +283,23 @@ with tab3:
             key="besondere_kategorien"
         )
         st.session_state.assessment.data["besondere_kategorien"] = bkpd
+        
+        with st.expander("ℹ️ Was sind Besondere Kategorien?"):
+            st.markdown("""
+            **Definition:** Besondere Kategorien sind sensible personenbezogene Daten, die besonders geschützt werden müssen.
+            
+            **Beispiele:**
+            - 🏥 Gesundheitsdaten (medizinische Informationen, Krankheitsgeschichte)
+            - 🧬 Genetische Daten
+            - 👁️ Biometrische Daten (Fingerabdrücke, Fokussierung)
+            - 🏛️ Daten zu politischen Überzeugungen
+            - ⛪ Daten zu religiösen oder philosophischen Überzeugungen
+            - 🏢 Gewerkschaftsdaten
+            - 🧬 Genetische oder sexuelle Orientierungsdaten
+            - 🚨 Strafrechtliche Daten
+            
+            **Hinweis:** Diese Daten erfordern besondere Schutzmaßnahmen und unterliegen strengeren Bestimmungen.
+            """)
 
 # TAB 4: Prototype Protection
 with tab4:
